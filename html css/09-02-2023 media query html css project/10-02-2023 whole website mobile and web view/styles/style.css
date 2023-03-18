@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+   
+}
+.container{
+    margin:0 auto;
+    width: 95vw;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap:20px;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:10px;
+    
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+a:hover,a:visited,a:active{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+.nav_image{
+    display: none;
+}
+.nav_image img{
+    width:30px;
+    height:30px;
+}
+section{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    margin-top: 30px;
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    
+}
+.left img{
+    width: 20px;
+    height: 20px;
+    
+}
+.left h1{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: white;
+}
+.left p{
+    color:white;
+    display: inline-block;
+    
+}
+
+.left h3{
+    color:white;
+}
+
+.right img{
+    width:200px;
+}
+main{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+    align-items: center;
+}
+main h2{
+    color:white;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    width:35vw;
+   
+   
+}
+.project_image{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.project_image img{
+    max-width:200px;
+    max-height: 200px;
+}
+.project_image h3{
+    color:white
+}
+footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+footer p{
+    font-size: 20px;
+    color:white;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+footer ul li img{
+    width: 20px;
+    height: 20px;
+}
+footer ul{
+    list-style: none;
+   display: flex;
+   gap:10px;
+}
+/* media query */
+@media screen and (max-width:570px){
+    nav{
+        justify-content: left;
+    }
+    nav ul{
+        display: none;
+    }
+    .nav_image{
+        display: flex;
+        justify-content: left;
+    }
+    section{
+        flex-direction: column;
+        margin-top: 3px;
+        gap:5px;
+    }
+    .left{
+        align-items: center;
+    }
+    .left p{
+        display: block;
+    }
+    .left h1{
+        font-size: 1.5rem;
+        margin-top: 3px;
+    }
+    main{
+        gap:5px;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+
+}

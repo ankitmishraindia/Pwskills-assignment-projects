@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    outline: none;
+    
+    background-color: black;
+}
+
+p,h2,h3,h4,span,h5,li
+{color:white;}
+
+/* nav section */
+nav{
+    
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+
+.nav-right ul{
+    display: flex;
+    list-style: none;
+}
+.nav-right ul li a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+.nav-right button{
+    border: none;
+    color:rgb(194, 193, 193);
+    box-shadow: -2px -2px 10px gray;
+    padding:7px 25px;
+    border-radius: 5px;
+}
+/* first section */
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    
+}
+.mainimage{
+    position: relative;
+    top:-230px;
+}
+.first_right{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   
+}
+.onear{
+    position: relative;
+    left:35px;
+    width: 80%;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.right-content h2{
+    font-size: 45px;
+}
+.right-content h4{
+    color:whitesmoke;
+}
+.right-content p{
+    color:lightgray;
+}
+.right-content p{
+    font-size: 11px;
+    line-height: 20px;
+}
+.right-content button{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    padding: 7px 15px;
+    background-color: rgb(36, 32, 32);
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+}
+.right-content button img{
+    width: 10px;
+    height: 13px;
+}
+.right-content button p{
+    font-size: 12px;
+    color:whitesmoke;
+}
+/* second section amazon youtube logo */
+.second_section{
+    display: flex;
+    gap:90px;
+}
+.second_section img{
+    width: 100px;
+    height: 30px;
+}
+
+/* specs third section */
+.third_section{
+    margin-top: 200px;
+    flex-direction: column;
+}
+.third_section_box{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.third_section_box_left{
+ display: flex;
+ flex-direction: column;
+ gap:30px;
+}
+.third_section_box_left_box{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+.third_section_box_left_box img{
+    width: 15px;
+    height: 20px;
+   }
+.third_section_box_left_box p{
+    font-size: 17px;
+    color:lightgray;
+   }
+.third_section_box_left_box span{
+    font-size: 14px;
+    color:lightgray;
+   }
+.third_section_box_left_box:last-child{
+    align-self:center;
+}
+.case_section{
+    flex-direction: column;
+    margin-top: 100px;
+}
+.case_section_box{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+.case_section_right_box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:12px;
+}
+.case_section_right_box p{
+   color:lightgray;
+   font-size: 15px;
+   line-height: 35px;
+   
+}
+.case_section_right_box button{
+    display: flex;
+    gap:10px;
+    padding:7px 20px;
+    align-items: center;
+    border:none;
+    background-color: rgb(35, 33, 33);
+    cursor: pointer;
+}
+.case_section_right_box button img{
+    height: 10px;
+}
+.case_section_right_box button span{
+    font-size: 10px;
+}
+/* after case section */
+.aftercasesection{
+    margin-top: 100px;
+}
+.aftercasesection_leftbox{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    
+    
+}
+.aftercasesection_leftbox h4{
+    font-size: 20px;
+}
+.aftercasesection_leftbox p{
+    color:lightgray;
+}
+.aftercasesection_leftbox button{
+    padding:4px 10px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border: none;
+    background-color: rgb(33, 30, 30);
+    color:whitesmoke;
+    font-size: 10px;
+    justify-content: center;
+}
+.aftercasesection_leftbox button img{
+    height: 10px;
+}
+/* choose your style */
+.chooseyourstyle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap:20px;
+}
+.chooseyourstylemainbox{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 80px;
+    row-gap: 60px;
+    
+}
+.chooseyourstylebox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.purchasebox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:15px;
+    line-height: 10px;
+}
+.purchasebox p{
+    color:rgb(234, 222, 222);
+    font-size: 15px;
+}
+.purchasebox span{
+    font-size: 12px;
+    color:lightgray;
+}
+.purchasebox img{
+    height: 15px;
+    
+}
+footer{
+    display: flex;
+    margin-top: 100px;
+    gap:20px;
+    justify-content: space-around;
+}
+footer img{
+    height: 30px;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li{
+    font-size: 13px;
+    color:whitesmoke;
+}
+.fourthfooterboxfirst{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.fourthfooterboxfirst input{
+    border: none;
+    color:lightgray;
+    background-color: rgb(39, 34, 34);
+    padding:3px 10px;
+}
+.fourthfooterboxfirst img{
+    height: 18px;
+}
+.fourthfooterboxfirst button{
+    color:whitesmoke;
+    border: none;
+}
+.arrow{
+    position:relative;
+    right: -60px;
+    top:0px;
+}

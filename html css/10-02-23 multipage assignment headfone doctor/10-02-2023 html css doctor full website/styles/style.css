@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    background-color:rgb(229, 233, 233);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+nav img{
+    width: 90px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:30px;
+}
+nav ul li{
+    font-weight: 600;
+}
+main{
+    display:flex;
+    margin-top: 160px;
+    align-items: center;
+    
+    gap:261px;
+    
+    
+}
+.mainbox{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+    gap:10px;
+    margin-left: 230px;
+    align-items: flex-start;
+    justify-content: left;
+}
+.smallimage{
+    width: 14px;
+    height: 14px;
+    
+}
+[alt~="mouse"]{
+    margin-left: 400px;
+}
+[alt~="bottomAngle"]{
+    margin-left: 235px;
+}
+.scope{
+   position: absolute;
+   top:-18px;
+   left: 185px;
+   z-index: 0;
+   background: transparent;
+   width: 320px;
+}
+.mainbox h1{
+    font-size: 45px;
+   
+}
+.mainbox p{
+    font-size: 12px;
+    word-spacing: 1px;
+}
+
+.mainbox button{
+    background-color: green;
+    color:white;
+    padding: 5px 18px;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+}
+.mainsecondbox{
+    position: relative;
+}
+.roundimage{
+    width: 320px;
+    height: 320px;
+}
+.doctor{
+    position: absolute;
+    background:transparent;
+    z-index: 20;
+    top:-189px;
+    left: -26px;
+    height: 543px;
+    width: 340px;
+}
+#greenimage{
+    position: absolute;
+    top:-31px;
+    background:transparent;
+    left: -9px;
+}

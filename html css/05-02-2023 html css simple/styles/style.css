@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background:url('../assets/pexels-raul-juarez-2388639.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background:skyblue;
+    height: 5vh;
+    
+    
+}
+.image{
+    width:10%;
+    border-right: 1px solid rgba(100, 100, 100, 0.9);
+}
+img{
+    width: 100px;
+    height: 30px;
+    
+}
+.content{
+    width:90%;
+    display: flex;
+    justify-content: space-between;         
+}
+.content ul{
+    list-style: none;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    margin-left: 50px;
+    color:white;
+}
+.content button{
+    background-color: green;
+    color:white;
+    border:none;
+    padding:5px 15px;
+    border-radius: 5px;
+}
+section{
+   
+     margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    
+   align-items: center;
+   gap:20px;
+}
+section h1{
+    color:white;
+    font-size: 60px;
+}
+section p{
+    color:white;
+}
+section button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+

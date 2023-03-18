@@ -1,0 +1,139 @@
+*{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow:hidden;
+
+}
+body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+       justify-content: space-between;
+       background-color: rgb(224, 211, 211);
+}
+li{
+        list-style: none;
+        cursor:pointer
+}
+a{
+        text-decoration: none;
+}
+header{
+        padding:10px 0;
+        height: 100px;
+}
+nav{
+        display: flex;
+        width:100%;
+        align-items: center;
+        justify-content: space-around;
+}
+.logo img
+{
+        height: 30px;
+        width: 30px;
+        
+}
+.logo{
+        width: 30px;
+        height: 30px;
+}
+nav ul{
+        display: flex;
+        gap:40px;
+        font-weight:700;
+
+}
+nav ul li:hover{
+        text-decoration: underline;
+        font-weight: 900;
+}
+nav ul li a:visited,a:active{
+        background-color: white;
+}
+.search_field{
+        display: flex;
+        
+}
+input{
+        padding:auto;
+}
+.hero_section{
+        display: flex;
+        align-items: center;
+}
+.hero_section_left{
+        width: 60%;
+        padding: 0 8%;
+}
+.hero_section_left h1{
+        font-weight: 800;
+        font-size: 35px;
+        margin-bottom: 16px;
+}
+.hero_section_left h1 span{
+        font-weight: 800;
+        color:rgb(18, 155, 155);
+        background-color: #dfdfe0;
+        padding: 0 15px;
+
+}
+.hero_section_left p{
+        font-weight: 500;
+        font-size: 25px;
+}
+.hero_section_left p span{
+        font-weight: 700;
+        font-size: 20px;
+        color:rgb(18, 155, 155);
+}
+.hero_section_right{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+}
+.hero_section_right img
+{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+}
+.right_section_button
+{
+        display: flex;
+        align-items: center;
+        gap:30px;
+}
+footer{
+        font-weight: 600;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+}
+footer ul{
+        display: flex;
+        gap:20px;
+        justify-content: center;
+}
+button{
+        background-color:rgb(18, 155, 155);
+        padding: 4px 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-weight: 700;
+        width: fit-content;
+        color:white;
+        
+}
+button:hover{
+        background-color: white;
+        color: rgb(18, 155, 155);
+        border: 1px solid black;
+}
