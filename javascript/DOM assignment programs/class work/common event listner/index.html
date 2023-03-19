@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        #btn{
+            padding:8px 10px;
+            background-color: gray;
+            font-size: 25px;
+            color:white;
+        }
+    </style>
+    <title>common event listner</title>
+</head>
+<body>
+     <button id="btn" onclick="btnclick()" ondblclick="btndbl()" onmouseover="mouseovr()" onmouseout="mouseouut()">Event</button>
+      <br><label for="input">Input in field:</label>
+     <input type="text" id="input" onkeypress="onkeyprs()"/>
+     <br><p id="pid"></p>
+     <script>
+      //onclick function
+      function btnclick(){
+        document.body.style.backgroundColor="yellow";
+      }
+      //double click function
+      function btndbl(){
+        document.getElementById("btn").style.backgroundColor="skyblue";
+        document.body.style.backgroundColor="white";
+      }
+      //mouseover
+      function mouseovr(){
+        document.getElementById("btn").style.padding="15px 25px";
+        document.getElementById("btn").innerText="click";
+        document.getElementById("btn").style.backgroundColor="aqua";
+        setTimeout(() => {
+          document.getElementById("btn").style.padding="";
+        document.getElementById("btn").innerText="Event";
+        document.getElementById("btn").style.backgroundColor="";
+        }, 1000);
+
+      }
+      //mouseout
+      let btn=document.getElementById("btn");
+      btn.addEventListener("mouseout",mouseouut);
+      function mouseouut(){document.getElementById("btn").style.backgroundColor="red";
+        setTimeout(()=>{document.getElementById("btn").style.backgroundColor="";},1000);}
+        //onkeypress
+        function onkeyprs(){
+          document.getElementById("pid").textContent="you pressed a key";
+          setTimeout(() => {
+            document.getElementById("pid").textContent="";
+          }, 1000);
+        }
+     </script>
+</body>
+</html>
