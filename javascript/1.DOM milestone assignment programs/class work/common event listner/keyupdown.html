@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        #btn{
+            padding:8px 10px;
+            background-color: gray;
+            font-size: 25px;
+            color:white;
+        }
+    </style>
+    <title>key up down in input</title>
+</head>
+<body>
+      <h2>Press key down and up</h2>
+     <input type="text" id="input" onkeydown="onkeydwn()" onkeyup="onkeyupp()"/>
+     <br><p id="pid">Press any key</p>
+     <script>
+        //onkeydown
+        function onkeydwn(){
+          document.getElementById("pid").textContent="Key is down";
+          document.getElementById("input").style.backgroundColor="green";
+          setTimeout(() => {
+            document.getElementById("pid").textContent="Press any key";
+          }, 1000);
+        }
+        //onkeyup
+        function onkeyupp(){
+          document.getElementById("pid").textContent="Key is up";
+          document.getElementById("input").style.backgroundColor="red";
+          setTimeout(() => {
+            document.getElementById("input").style.backgroundColor="";
+          }, 1000);
+        }
+     </script>
+</body>
+</html>

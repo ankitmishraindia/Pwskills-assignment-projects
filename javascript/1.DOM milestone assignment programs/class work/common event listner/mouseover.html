@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        #btn{
+            padding:8px 10px;
+            background-color: gray;
+            font-size: 25px;
+            color:white;
+        }
+    </style>
+    <title>common event listner</title>
+</head>
+<body>
+    <h2>Mouse over the button</h2>
+     <button id="btn" onmouseover="mouseovr()">Event</button>
+     <script>
+     
+      //mouseover
+      function mouseovr(){
+        document.getElementById("btn").innerText="click";
+        document.getElementById("btn").style.backgroundColor="aqua";
+        setTimeout(() => {
+          document.getElementById("btn").style.padding="";
+        document.getElementById("btn").innerText="Event";
+        document.getElementById("btn").style.backgroundColor="";
+        }, 1000);
+      }
+     </script>
+</body>
+</html>

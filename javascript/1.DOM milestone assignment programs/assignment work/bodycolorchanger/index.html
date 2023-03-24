@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>body color changer</title>
+</head>
+<body>
+
+    <script>
+        //colour changer
+       
+        const colorchange=()=>{
+            let val="0123456789ABCDEF";
+            let hash="#";
+            for(let i=0;i<6;i++)
+            {
+                hash=hash+val[Math.floor(Math.random()*16)];
+                
+            }
+            return hash;
+            }
+            function colorchanger(){
+                document.body.style.backgroundColor=colorchange();
+            }
+              document.body.addEventListener("click",colorchanger);
+              
+    </script>
+</body>
+</html>

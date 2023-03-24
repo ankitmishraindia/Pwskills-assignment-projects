@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        #btn{
+            padding:8px 10px;
+            background-color: gray;
+            font-size: 25px;
+            color:white;
+        }
+    </style>
+    <title>Mouse out event</title>
+</head>
+<body>
+     <button id="btn" onmouseout="mouseouut()">Event</button>
+      <h2>Mouse out from button</h2>
+     <script>
+      
+      //mouseout
+      let btn=document.getElementById("btn");
+      btn.addEventListener("mouseout",mouseouut);
+      function mouseouut(){
+        document.getElementById("btn").style.backgroundColor="red";
+        setTimeout(()=>{document.getElementById("btn").style.backgroundColor="";},1000);}
+     </script>
+</body>
+</html>
