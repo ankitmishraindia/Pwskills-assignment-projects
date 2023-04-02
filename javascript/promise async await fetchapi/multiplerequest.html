@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple request in one object</title>
+</head>
+<body>
+     <script>
+        async function multiplerequest(){
+               //fetch todo 
+              const response1=await fetch("https://jsonplaceholder.typicode.com/todos/1");
+              const data1=await response1.json();
+              //fetch post 
+              const response2=await fetch("https://jsonplaceholder.typicode.com/posts/1");
+              const data2=await response2.json();
+              //create two object with keys:todo and post
+              const newObj={todo:data1,post:data2};
+              console.log(newObj)
+        }
+        multiplerequest()
+     </script>
+</body>
+</html>
